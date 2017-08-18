@@ -1,0 +1,121 @@
+/*********** 1. Básicos ***********/
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: sans-serif;
+	background-image: url(../images/bg-body.png);
+	margin: 0;
+}
+
+ul, ol{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+img{
+	width: 100%;
+}
+
+/*********** 1. Home ***********/
+.banner, .main-nav{
+	display: none;
+}
+
+.container{
+	margin: 0 15px;
+}
+
+.logo{
+	display: block;
+	max-width: 180px;
+	margin: 15px auto 30px;
+	border-radius: 50%;
+	border: solid 1px #000;
+}
+
+.toggle-nav{
+	display: block;
+	margin: 0 auto 15px;
+	background-color: #222;
+	width: 45px;
+	text-align: center;
+	padding: 15px 0;
+	color: #fff;
+	font-size: 1.2em;
+}
+
+.main-nav a{
+	display: block;
+	background-color: #222;
+	color: #FFF;
+	font-size: 1.4em;
+	text-align: center;
+	padding: 15px;
+	border-bottom: solid 3px rgba(255,255,255,0.5)
+}
+
+.product a{
+	background-color: #222;
+	color: #fff;
+	display: inline-block;
+	padding: 15px;
+	margin-bottom: 30px;
+}
+
+.main-footer a{
+	display: block;
+	background-color: #ec2d2d;
+	color: #FFFFFF;
+	padding: 15px 25px;
+	margin-bottom: 3px;
+	text-transform: uppercase; /* lowercase - capitalize */
+}
+
+
+/*********** 2. Media-Queries ***********/
+@media (min-width: 700px) {
+	.container{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.toggle-nav{
+		display: none;
+	}
+	.main-nav{
+		display: block !important;
+		overflow: hidden;
+		margin-bottom: 40px;
+	}
+	.main-nav li{
+		/*width: 15%;*/
+		margin: 0 0.83%;
+		/*float: left;*/
+		display: inline-block;
+	}
+	.main-nav a{
+		/*padding-left: 0;
+		padding-right: 0;*/
+		font-size: 1.2em;
+		border: none;
+	}
+}
+
+
+
+
+
+
+
+
+@media (min-width: 1200px) {
+	.container{
+		max-width: 1200px;
+	}
+}
